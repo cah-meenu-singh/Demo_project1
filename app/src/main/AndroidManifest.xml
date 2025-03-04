@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".UserDataActivity"
+            android:exported="false" />
+        <!-- Splash Activity -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:label="Splash Screen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <!-- Main activity settings -->
+        </activity>
+        <activity
+            android:name=".DashboardActivity"
+            android:launchMode="standard"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <!-- Main activity settings -->
+        </activity>
+    </application>
+
+</manifest>
